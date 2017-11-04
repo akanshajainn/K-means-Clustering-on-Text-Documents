@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-''' This program takes a excel sheet as  '''
+''' This program takes a excel sheet as input where each row in first column of sheet represents a document.  '''
 
 import pandas as pd
 import numpy as np
