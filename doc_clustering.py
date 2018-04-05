@@ -13,7 +13,7 @@ corpus=[]
 for index,row in idea.iterrows():
     corpus.append(row['Idea'])
 
-'''Or you could just comment out the above code and use this dummy corpus list instaed if don't have the data.
+'''Or you could just comment out the above code and use this dummy corpus list instead if you don't have the data.
 
 corpus=['She went to the airport to see him off.','I prefer reading to writing.','Los Angeles is in California. It's southeast of San Francisco.','I ate a burger then went to bed.','Compare your answer with Tom's.','I had hardly left home when it began to rain heavily.','If he had asked me, I would have given it to him. 
 ','I could have come by auto, but who would pay the fare? ','Whatever it may be, you should not have beaten him.','You should have told me yesterday','I should have joined this course last year.','Where are you going?','There are too many people here.','Everyone always asks me that.','I didn't think you were going to make it.','Be quiet while I am speaking.','I can't figure out why he said so.'] '''
@@ -49,5 +49,5 @@ frame=pd.DataFrame(idea,index=[clusters], columns=['Idea','Cluster']) # Converti
 print("\n")
 print(frame) #Print the doc with the labeled cluster number.
 print("\n")
-print(frame['Cluster'].value_counts()) #Print the counts of doc belonging to ach cluster.
+print(frame['Cluster'].value_counts()) #Print the counts of doc belonging to each cluster.
 
